@@ -1,4 +1,5 @@
 
+
 function login(){
     const username = document.getElementById("username").value;
     const password = document.getElementById("pass").value;
@@ -16,7 +17,40 @@ function login(){
                 const object = JSON.parse (xhttp.responseText); 
                 //console.log(object.faculty); 
                 if(object.type == "student"){
-                    //alert("this is student");
+
+                    /*localStorage.setItem('objectUser',object.username);
+                    var storedObjectUser = localStorage.getItem('objectUser');*/
+
+                    localStorage.setItem('objectType',object.type);
+                    var storedObjectType = localStorage.getItem('objectType');
+
+                    localStorage.setItem('objectTuStatus',object.tu_status);
+                    var storedObjectTuStatus = localStorage.getItem('objectTuStatus');
+
+                    localStorage.setItem('objectStatus',object.status);
+                    var storedObjectStatus = localStorage.getItem('objectStatus');
+
+                    localStorage.setItem('objectMessage',object.message);
+                    var storedObjectMessage = localStorage.getItem('objectMessage');
+
+                    localStorage.setItem('objectUserName',object.username);
+                    var storedObjectUserName = localStorage.getItem('objectUserName');
+
+                    localStorage.setItem('objectDisplayNameTH',object.displayname_th);
+                    var storedObjectDisplayNameTH = localStorage.getItem('objectDisplayNameTH');
+
+                    localStorage.setItem('objectDisplayNameEN',object.displayname_th);
+                    var storedObjectDisplayNameEN = localStorage.getItem('objectDisplayNameEN');
+
+                    localStorage.setItem('objectEmail',object.email);
+                    var storedObjectEmail = localStorage.getItem('objectEmail');
+
+                    localStorage.setItem('objectDepartment',object.department);
+                    var storedObjectDepartment = localStorage.getItem('objectDepartment');
+
+                    localStorage.setItem('objectFaculty',object.faculty);
+                    var storedObjectFaculty = localStorage.getItem('objectFaculty');
+
                     window.location = "mainStudent.html";
                 }
                 else if(object.type == "employee"){
@@ -31,3 +65,4 @@ function login(){
          
   }
 }
+

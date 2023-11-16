@@ -5,6 +5,9 @@ import th.ac.tu.cs.services.model.Tutorial;
 
 public interface TutorialRepository {
     int save(Tutorial tu);
+    int save1(Tutorial tu);
+    int save2(Tutorial tu);
+    int save3(Tutorial tu);
 
     Tutorial findById(String id);
 

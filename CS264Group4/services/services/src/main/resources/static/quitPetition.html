@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>คำร้องขอเพิ่ม - ถอนรายวิชา</title>
+    <title>คำร้องขอลาออก</title>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!--CSS-->
@@ -112,9 +112,9 @@
     </div>
 </div>
 
-<form action="/hello">
+<form action="/hello2">
     <div class="container p-4 my-3 bg-white" id="radius">
-        <h1 class="center-text"><strong>คำร้องขอเพิ่ม-ถอนรายวิชา</strong> </h1>
+        <h1 class="center-text"><strong>คำร้องทั่วไป(ลาออก)</strong> </h1>
         <p class="center-text">กรุณากรอกข้อมูลให้ถูกต้องและครบถ้วน เครื่องหมาย<span class="red-asterisk">*</span>แทน <span class="red-asterisk">ข้อมูลที่จำเป็นต้องกรอก</span></p>
         <label for="date"><span class="red-asterisk">*</span>วัน/เดือน/ปี</label>
         <input type="date" name="date" id="date" required>
@@ -181,132 +181,57 @@
         <br>
     </div>
 
-    <div class="container p-4 my-3 bg-white" id="radius3">
-        <h2>รายละเอียดวิชาที่ต้องการเพิ่ม-ถอน</h2>
-        <label class="col-sm-2" for=nadd><span class="red-asterisk">*</span>มีความประสงค์ขอเพิ่ม</label>
-        <input type="number" name="nadd" id="nadd" min="0" max="10" required class="tinybox">
-        วิชา
+    <div class="container p-4 my-3 bg-white" id="radius2">
+        <h2>ขอลาออก</h2>
         <br>
-        <label class="col-sm-2" for=ndrop><span class="red-asterisk">*</span>มีความประสงค์ขอถอน</label>
-        <input type="number" name="ndrop" id="ndrop" min="0" max="10" required class="tinybox">
-        วิชา
+        <label class="col-sm-2" for=term><span class="red-asterisk">*</span>ภาคเรียน</label>
+        <select name="term" id="term" required class="small-box">
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+        </select>
+
+        <label class="col-sm-2" for=year><span class="red-asterisk">*</span>ปีการศึกษา</label>
+        <input name="year" id="year" required class="small-box">
         <br>
-        <table class="table">
-            <tr class="center-text">
-                <th>ลำดับ</th>
-                <th>รหัสวิชา</th>
-                <th>ชื่อวิชา</th>
-                <th>section</th>
-                <th>วัน/เวลา</th>
-                <th>หน่วยกิต</th>
-                <th>ชื่อผู้สอน</th>
-                <th>ผู้สอนอนุญาต</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td> <input name="subjectCode" class="inputTable"></td>
-                <td> <input name="subjectName" class="inputTable"></td>
-                <td> <input name="subjectSection" class="inputTable"></td>
-                <td> <input name="subjectDate" class="inputTable"></td>
-                <td> <input name="subjectCredit" class="inputTable"></td>
-                <td> <input name="subjectTeacher" class="inputTable"></td>
-                <td> <input name="subjectTeacherCheck" class="inputTable" type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td> <input name="subjectCode" class="inputTable"></td>
-                <td> <input name="subjectName" class="inputTable"></td>
-                <td> <input name="subjectSection" class="inputTable"></td>
-                <td> <input name="subjectDate" class="inputTable"></td>
-                <td> <input name="subjectCredit" class="inputTable"></td>
-                <td> <input name="subjectTeacher" class="inputTable"></td>
-                <td> <input name="subjectTeacherCheck" class="inputTable" type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td> <input name="subjectCode" class="inputTable"></td>
-                <td> <input name="subjectName" class="inputTable"></td>
-                <td> <input name="subjectSection" class="inputTable"></td>
-                <td> <input name="subjectDate" class="inputTable"></td>
-                <td> <input name="subjectCredit" class="inputTable"></td>
-                <td> <input name="subjectTeacher" class="inputTable"></td>
-                <td> <input name="subjectTeacherCheck" class="inputTable" type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td> <input name="subjectCode" class="inputTable"></td>
-                <td> <input name="subjectName" class="inputTable"></td>
-                <td> <input name="subjectSection" class="inputTable"></td>
-                <td> <input name="subjectDate" class="inputTable"></td>
-                <td> <input name="subjectCredit" class="inputTable"></td>
-                <td> <input name="subjectTeacher" class="inputTable"></td>
-                <td> <input name="subjectTeacherCheck" class="inputTable" type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td> <input name="subjectCode" class="inputTable"></td>
-                <td> <input name="subjectName" class="inputTable"></td>
-                <td> <input name="subjectSection" class="inputTable"></td>
-                <td> <input name="subjectDate" class="inputTable"></td>
-                <td> <input name="subjectCredit" class="inputTable"></td>
-                <td> <input name="subjectTeacher" class="inputTable"></td>
-                <td> <input name="subjectTeacherCheck" class="inputTable" type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td> <input name="subjectCode" class="inputTable"></td>
-                <td> <input name="subjectName" class="inputTable"></td>
-                <td> <input name="subjectSection" class="inputTable"></td>
-                <td> <input name="subjectDate" class="inputTable"></td>
-                <td> <input name="subjectCredit" class="inputTable"></td>
-                <td> <input name="subjectTeacher" class="inputTable"></td>
-                <td> <input name="subjectTeacherCheck" class="inputTable" type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>7</td>
-                <td> <input name="subjectCode" class="inputTable"></td>
-                <td> <input name="subjectName" class="inputTable"></td>
-                <td> <input name="subjectSection" class="inputTable"></td>
-                <td> <input name="subjectDate" class="inputTable"></td>
-                <td> <input name="subjectCredit" class="inputTable"></td>
-                <td> <input name="subjectTeacher" class="inputTable"></td>
-                <td> <input name="subjectTeacherCheck" class="inputTable" type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>8</td>
-                <td> <input name="subjectCode" class="inputTable"></td>
-                <td> <input name="subjectName" class="inputTable"></td>
-                <td> <input name="subjectSection" class="inputTable"></td>
-                <td> <input name="subjectDate" class="inputTable"></td>
-                <td> <input name="subjectCredit" class="inputTable"></td>
-                <td> <input name="subjectTeacher" class="inputTable"></td>
-                <td> <input name="subjectTeacherCheck" class="inputTable" type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>9</td>
-                <td> <input name="subjectCode" class="inputTable"></td>
-                <td> <input name="subjectName" class="inputTable"></td>
-                <td> <input name="subjectSection" class="inputTable"></td>
-                <td> <input name="subjectDate" class="inputTable"></td>
-                <td> <input name="subjectCredit" class="inputTable"></td>
-                <td> <input name="subjectTeacher" class="inputTable"></td>
-                <td> <input name="subjectTeacherCheck" class="inputTable" type="checkbox"></td>
-            </tr>
-            <tr>
-                <td>10</td>
-                <td> <input name="subjectCode" class="inputTable"></td>
-                <td> <input name="subjectName" class="inputTable"></td>
-                <td> <input name="subjectSection" class="inputTable"></td>
-                <td> <input name="subjectDate" class="inputTable"></td>
-                <td> <input name="subjectCredit" class="inputTable"></td>
-                <td> <input name="subjectTeacher" class="inputTable"></td>
-                <td> <input name="subjectTeacherCheck" class="inputTable" type="checkbox"></td>
-            </tr>
-        </table>
+        <input type="radio" id="reason1" name="reason" value="choice1">
+        <label for="reason1">ศึกษาต่อที่ ม.ธรรมศาสตร์</label><br>
+        <label class="col-sm-2" for=faculty><span class="red-asterisk">*</span>คณะ</label>
+        <input name="faculty" id="faculty" required class="small-box"><br>
+        <label class="col-sm-2" for=branch><span class="red-asterisk">*</span>สาขา</label>
+        <input name="branch" id="branch" required class="small-box"><br>
+        <br>
+
+
+
+        <input type="radio" id="reason2" name="reason" value="choice2">
+        <label for="reason2">ศึกษาต่อที่มหาวิทยาลัยอื่น</label><br>
+
+        <label class="col-sm-2" for=university><span class="red-asterisk">*</span>มหาวิทยาลัย</label>
+        <input name="university" id="university" required class="small-box"><br>
+        <label class="col-sm-2" for=faculty2><span class="red-asterisk">*</span>คณะ</label>
+        <input name="faculty2" id="faculty2" required class="small-box"><br>
+        <label class="col-sm-2" for=branch2><span class="red-asterisk">*</span>สาขา</label>
+        <input name="branch2" id="branch2" required class="small-box"><br>
+
+        <div class="p-4 my-3 bg-white" id="radius4">
+            <p><span class="red-asterisk">*</span>มีหนี้ค้างกับ มธ. หรือหน่วยงานภายในมธ. หรือไม่ ถ้ามีโปรดระบุ (หากไม่มีหนี้ กรุณา-)<p>
+            <label for="deptCause"></label>
+            <input name="deptCause" id="deptCause" required>
+
+            <p for=grade><span class="red-asterisk">*</span>ต้องการเกรดในภาคเรียนที่ยื่นคำร้องลาออกหรือไม่</p> <br>
+            <select name="grade" id="grade" required class="small-box">
+                <option value="true"> ต้องการ </option>
+                <option value="false"> ไม่ต้องการ </option>
+            </select>
+
+
+        </div>
+
     </div>
 
     <div class="container p-4 my-3 bg-white" id="radius4">
-        <h2><span class="red-asterisk">*</span>เหตุผลในการยื่นคำร้องเพิ่ม-ถอนวิชา</h2>
+        <h2><span class="red-asterisk">*</span>เหตุผล</h2>
         <label for="cause"></label>
         <input name="cause" id="cause" required>
     </div>

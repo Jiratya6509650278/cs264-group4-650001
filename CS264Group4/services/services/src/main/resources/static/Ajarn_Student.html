@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" >
 <head>
-    <title>หน้าหลัก</title>
+    <title>คำร้องนักศึกษา</title>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!--CSS-->
     <link rel="stylesheet" href="css/styleste.css">
     <link rel="stylesheet" href="css/espStyles.css">
+    <link rel="stylesheet" href="css/loginStyles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/x-icon" href="resource/Thammasat_University.svg.png">
@@ -50,9 +51,9 @@
             //left: 50%;
             margin-left: 42px;
             transform: translate(-50%, -50%);
-            width: 80%;
-            height: 80%;
-            background: url('resource/user%20(1).png') no-repeat center center;
+            width: 50%;
+            height: 50%;
+            background: url('resource/option.png') no-repeat center center;
             background-size: cover;
         }
 
@@ -89,20 +90,27 @@
 <!--Test-->
 <script src="script/studentPetition.js"></script>
 
+
 <div id="image">
 
     <div class="right-block">
         <img class="head-img"  src="resource/Thammasat_Horz_logo_black.png">
     </div>
     <div class="left-block">
+
+        <div class="user-tag">
+            <img class="user-tag-image" src="resource/user%20(1).png" alt="resource/user%20(1).png">
+        </div>
+        </div>
         <div class="dropdown" onclick="toggleDropdown()">
             <button class="dropdown-button"><div class="icon"></div></button>
                 <div class="dropdown-content">
                     <a href="index.html" target="_self">Log out</a>
                 </div>
         </div>
+        
+
     </div>
-</div>
 
 <div class="container p-4 bg-white" id="center-web">
     <h3 class="center-text">คำร้องจากนักศึกษา</h3>
@@ -112,11 +120,17 @@
 
         </div>
 
+
     </div>
+
     <!--<div class="center-button-2">
         <a href="mainAjarn.html"><button class="btn btn-primary cbtn" id="submit">หน้าหลัก</button></a>
     </div>-->
 </div>
+
+
+
+
 
 </body>
 </html>

@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <title>คำร้องขอเพิ่ม - ถอนรายวิชา</title>
-    <meta charset="UTF-8">
+    <title>คำร้องขอเพิ่ม-ถอนรายวิชา</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!--CSS-->
     <link rel="stylesheet" href="css/styleste.css">
     <link rel="stylesheet" href="css/espStyles.css">
-    <link rel="stylesheet" href="css/loginStyles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" type="image/x-icon" href="resource/Thammasat_University.svg.png">
@@ -34,7 +32,7 @@
             border: none;
             cursor: pointer;
             //width: 50px;
-            height: 100%;
+            height: 100%;   
         }
         .dropdown-button:hover {
             border: 0px solid black;
@@ -75,16 +73,12 @@
         }
     </style>
 
-
 </head>
 <body class="red">
 <!--JS-->
-<script src="script/scriptte.js"></script>
-<script src="script/loginScript.js"></script>
-<script src="script/gotoScript.js"></script>
+<script src="script/check.js"></script>
 <script src="script/dropDown.js"></script>
 <script src="script/username.js"></script>
-
 <script>
     window.onload = function(){
         getUserName();
@@ -112,9 +106,16 @@
     </div>
 </div>
 
+<script src="script/account.js"></script>
+<script>
+    window.onload = function(){
+        getAll();
+    }
+</script>
+
 <form action="/hello">
     <div class="container p-4 my-3 bg-white" id="radius">
-        <h1 class="center-text"><strong>คำร้องขอเพิ่ม-ถอนรายวิชา</strong> </h1>
+        <h1 class="center-text"><strong>คำร้องขอเพิ่ม-ถอน รายวิชา</strong> </h1>
         <p class="center-text">กรุณากรอกข้อมูลให้ถูกต้องและครบถ้วน เครื่องหมาย<span class="red-asterisk">*</span>แทน <span class="red-asterisk">ข้อมูลที่จำเป็นต้องกรอก</span></p>
         <label for="date"><span class="red-asterisk">*</span>วัน/เดือน/ปี</label>
         <input type="date" name="date" id="date" required>
@@ -321,6 +322,5 @@
     </div>
 
 </form>
-
 </body>
 </html>

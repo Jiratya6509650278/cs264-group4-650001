@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>เงื่อนไข</title>
+    <title>สำเร็จ</title>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!--CSS-->
     <link rel="stylesheet" href="css/styleste.css">
+    <link rel="stylesheet" href="css/espStyles.css">
     <link rel="stylesheet" href="css/loginStyles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <!--Bootstrap 5-->
+
     <style>
         .dropdown {
             position: relative;
@@ -32,7 +34,7 @@
             border: none;
             cursor: pointer;
             //width: 50px;
-            height: 100%;   
+            height: 100%;
         }
         .dropdown-button:hover {
             border: 0px solid black;
@@ -73,16 +75,15 @@
         }
     </style>
 
+
 </head>
 <body class="red">
 <!--JS-->
-<script src="script/check.js"></script>
+<script src="script/scriptte.js"></script>
+<script src="script/loginScript.js"></script>
+<script src="script/gotoScript.js"></script>
 <script src="script/dropDown.js"></script>
-<script src="script/username.js"></script>
-<script>
-    window.onload = function(){
-        getUserName();
-    }
+
 </script>
 
 <div id="image">
@@ -106,23 +107,20 @@
     </div>
 </div>
 
-
-<div class="container">
-    <div class="container p-4 bg-white" id="center-web">
-        <h4 class="center-text">เงื่อนไขในการยื่นคำร้องขอเพิ่ม - ถอนรายวิชา</h4>
-        <p>1. นักศึกษาต้องติดต่อผู้สอน หรือคณะเจ้าของวิชาที่นักศึกษาต้องการขอยื่นคำร้อง เพิ่ม - ถอน รายวิชาเพื่อแจ้ง
-            ข้อมูลเบื้องต้นว่าต้องการขอลงทะเบียน เพิ่ม - ถอน ในรายวิชานั้นๆ</p>
-        <p>2. เข้าสู่ระบบเพื่อกรอกฟอร์ม “ยื่นคำร้องขอเพิ่ม - ถอน รายวิชา”</p>
-        <p>3. การชำระเงิน เมื่อนักศึกษาชำระเงินสำเร็จ ให้นักศึกษากรอกแบบฟอร์มชำระเงินที่หน้าการชำระเงิน</p>
-        <p>4. กรณีที่เหตุผลการยื่นคำร้องจะต้องมีการแนบเอกสารหลักฐาน เช่น ใบรับรองแพทย์ หลักฐานการเจ็บป่วย และ
-            อื่น ๆ กรุณาแนบเอกสารเป็นไฟล์ pdf และ JPEG ให้ครบถ้วนและสมบูรณ์</p>
-        <p>5. เมื่ออาจารย์ที่ปรึกษาอนุมัติคำร้องให้ท่านเรียบร้อย ท่านจะไม่สามารถยกเลิกคำร้องของท่านได้</p>
+<div class="container-2">
+    <div class="main-content">
+        <div class="blank"></div>
+        <p class="center-text label"> คุณได้กรอกข้อมูลเรียบร้อยครบถ้วน</p>
+        <p class="center-text label">ระบบได้บันทึกความคิดเห็นของอาจารย์</p>
+        <p class="center-text label">ของคุณเรียนร้อย</p>
 
         <div class="center-button-2">
             <a href="mainStudent.html"><button class="btn btn-primary cbtn" id="submit">หน้าหลัก</button></a>
         </div>
+
     </div>
 </div>
+
 
 
 </body>
