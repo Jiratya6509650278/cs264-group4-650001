@@ -43,7 +43,7 @@ public class Tutorial {
     public String university;
     public String faculty2;
     public String branch2;
-    public String dept_cause;
+    public String deptCause;
     public String grade;
     public String otherCause;
 
@@ -103,7 +103,7 @@ public class Tutorial {
         this.university=u;
         this.faculty2=v;
         this.branch2=w;
-        this.dept_cause=x;
+        this.deptCause=x;
         this.grade=y;
         this.cause=z;
     }
@@ -225,12 +225,12 @@ public class Tutorial {
         this.branch2 = branch2;
     }
 
-    public String getDept_cause() {
-        return dept_cause;
+    public String getDeptCause() {
+        return deptCause;
     }
 
-    public void setDept_cause(String dept_cause) {
-        this.dept_cause = dept_cause;
+    public void setDeptCause(String deptCause) {
+        this.deptCause = deptCause;
     }
 
     public String getGrade() {
