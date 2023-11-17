@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>คำร้องอื่นๆ</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--CSS-->
+    <link rel="stylesheet" href="css/styleste.css">
+    <link rel="stylesheet" href="css/loginStyles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="resource/Thammasat_University.svg.png">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Bootstrap 5-->
+
+    <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            //background-color: green;
+            width: 100px;
+            height: 100px;
+             margin-right: 20px;
+        }
+
+        .dropdown-button {
+            padding: 10px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            //width: 50px;
+            height: 100%;   
+        }
+        .dropdown-button:hover {
+            border: 0px solid black;
+        }
+        .icon{
+            position: absolute;
+            //top: 50%;
+            //left: 50%;
+            margin-left: 42px;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            height: 50%;
+            background: url('resource/option.png') no-repeat center center;
+            background-size: cover;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            width: 110px;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown.active .dropdown-content {
+            display: block;
+        }
+    </style>
+
+</head>
+<body class="red">
+<!--JS-->
+<script src="script/scriptte.js"></script>
+<script src="script/dropDown.js"></script>
+
+<div id="image">
+    <div class="right-block">
+        <img class="head-img"  src="resource/Thammasat_Horz_logo_black.png">
+    </div>
+    <div class="left-block">
+
+        <div class="user-tag">
+            <p class="user-tag-id" id="username"></p>
+            <img class="user-tag-image" src="resource/user%20(1).png" alt="resource/user%20(1).png">
+        </div>
+        <div class="dropdown" onclick="toggleDropdown()">
+            <button class="dropdown-button"><div class="icon"></div></button>
+            <div class="dropdown-content">
+                <a href="mainStudent.html" target="_self">Home</a>
+                <a href="Personal.html" target="_self">Personal</a>
+                <a href="index.html" target="_self">Log out</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form action="/hello">
+    <div class="container p-4 my-3 bg-white" id="radius">
+        <h1 class="center-text"><strong>คำร้องทั่วไป(อื่นๆ)</strong> </h1>
+        <p class="center-text">กรุณากรอกข้อมูลให้ถูกต้องและครบถ้วน เครื่องหมาย<span class="red-asterisk">*</span>แทน <span class="red-asterisk">ข้อมูลที่จำเป็นต้องกรอก</span></p>
+        <label for="date"><span class="red-asterisk">*</span>วัน/เดือน/ปี</label>
+        <input type="date" name="date" id="date" required>
+    </div>
+
+    <div class="container p-4 my-3 bg-white" id="radius1">
+        <h2>ข้อมูลส่วนตัว</h2>
+        <label class="col-sm-2" for=prefix><span class="red-asterisk">*</span>คำนำหน้าชื่อ</label>
+        <select name="prefix" id="prefix" required class="small-box">
+            <option value="นาย"> นาย </option>
+            <option value="นาง"> นาง </option>
+            <option value="นางสาว"> นางสาว </option>
+        </select>
+        <br>
+        <label class="col-sm-2" for=name><span class="red-asterisk">*</span>ชื่อ-นามสกุล</label>
+        <input name="name" id="name" required>
+        <br>
+        <label class="col-sm-2" for=studentId><span class="red-asterisk">*</span>เลขทะเบียนนักศึกษา</label>
+        <input name="studentId" id="studentId" required maxlength="10" placeholder="กรอกตัวเลข 10 หลัก">
+        <br>
+        <label class="col-sm-2" for=studentYear><span class="red-asterisk">*</span>ชั้นปีที่ศึกษา</label>
+        <select name="studentYear" id="studentYear" required class="small-box">
+            <option value="1"> 1 </option>
+            <option value="2"> 2 </option>
+            <option value="3"> 3 </option>
+            <option value="1"> 4 </option>
+            <option value="2"> 5 </option>
+            <option value="3"> 6 </option>
+            <option value="1"> 7 </option>
+        </select>
+        <br>
+        <label class="col-sm-2" for=studyField><span class="red-asterisk">*</span>สาขาวิชา</label>
+        <input name="studyField" id="studyField" required>
+        <br>
+        <label class="col-sm-2" for=advisor><span class="red-asterisk">*</span>อาจารย์ที่ปรึกษา</label>
+        <input name="advisor" id="advisor" required>
+    </div>
+
+    <div class="container p-4 my-3 bg-white" id="radius2">
+        <h2>ที่อยู่ที่สามารถติดต่อได้ทางไปรษณีย์</h2>
+        <label class="col-sm-2" for=addressNumber><span class="red-asterisk">*</span>บ้านเลขที่</label>
+        <input name="addressNumber" id="addressNumber" required class="small-box">
+        <br>
+        <label class="col-sm-2" for=moo><span class="red-asterisk">*</span>หมู่ที่</label>
+        <input name="moo" id="moo" required class="small-box">
+        <br>
+        <label class="col-sm-2" for=tumbol><span class="red-asterisk">*</span>แขวง/ตำบล</label>
+        <input name="tumbol" id="tumbol" required>
+        <br>
+        <label class="col-sm-2" for=amphur><span class="red-asterisk">*</span>เขต/อำเภอ</label>
+        <input name="amphur" id="amphur" required>
+        <br>
+        <label class="col-sm-2" for=province><span class="red-asterisk">*</span>จังหวัด</label>
+        <input name="province" id="province" required>
+        <br>
+        <label class="col-sm-2" for=postalCode><span class="red-asterisk">*</span>รหัสไปรษณีย์</label>
+        <input name="postalCode" id="postalCode" placeholder="กรอกตัวเลข 5 หลัก" maxlength="5" required class="small-box">
+        <br>
+        <label class="col-sm-2" for=mobilePhone><span class="red-asterisk">*</span>โทรศัพท์มือถือ</label>
+        <input name="mobilePhone" id="mobilePhone" placeholder="กรอกตัวเลข 10 หลัก" maxlength="10" required>
+        <br>
+        <label class="col-sm-2" for=phone>โทรศัพท์บ้าน(ถ้ามี)</label>
+        <input name="phone" id="phone" placeholder="กรอกตัวเลข 10 หลัก" maxlength="10">
+        <br>
+    </div>
+
+    <div class="container p-4 my-3 bg-white" id="radius4">
+        <h2>เรื่อง</h2>
+        <label for="other-cause"></label>
+        <input name="other-cause" id="other-cause" required>
+    </div>
+
+    <div class="container p-4 my-3 bg-white" id="radius4">
+        <h2><span class="red-asterisk">*</span>เหตุผล</h2>
+        <label for="cause"></label>
+        <input name="cause" id="cause" required>
+    </div>
+
+    <div class="container p-4 my-3 bg-white" id="radius5">
+        <label for="nfile">แนบไฟล์.pdf</label>
+        <input type="file" name="nfile" id="nfile" accept=".pdf">
+    </div>
+
+    <div class="center-button">
+        <button class="btn btn-primary" id="submit" onclick="validateAndAlert()">SUBMIT</button>
+    </div>
+
+</form>
+</body>
+</html>

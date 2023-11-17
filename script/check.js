@@ -7,6 +7,9 @@ function validateAndAlert() {
     var isValidId = /^\d{10}$/.test(IdInput);
     var isValidmobilePhone = /^\d{10}$/.test(mobilePhoneInput);
 
+    var userConfirmation = confirm("คุณแน่ใจหรือไม่ที่ต้องการทำการ submit ฟอร์มนี้?");
+
+
     if (!isValidPostCode) {
         alert("รหัสไปรษณีย์ต้องเป็นตัวเลข 5 หลัก");
         event.preventDefault();
@@ -16,12 +19,16 @@ function validateAndAlert() {
     } else if(!isValidmobilePhone){
         alert("เบอร์โทรศัพท์ต้องเป็นตัวเลข 10 หลัก");
         event.preventDefault();
-    }
-
-    var userConfirmation = confirm("คุณแน่ใจหรือไม่ที่ต้องการทำการ submit ฟอร์มนี้?");
-    if (userConfirmation) {
+    } else if(userConfirmation){
         document.getElementById("myForm").submit();
     } else {
         alert("คุณยกเลิกการ submit ฟอร์ม");
     }
+
+/*    if (userConfirmation) {
+        document.getElementById("myForm").submit();
+    } else {
+        alert("คุณยกเลิกการ submit ฟอร์ม");
+    }*/
+
 }
