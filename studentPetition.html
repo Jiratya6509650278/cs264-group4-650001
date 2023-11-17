@@ -84,10 +84,13 @@
 <script src="script/gotoScript.js"></script>
 <script src="script/dropDown.js"></script>
 <script src="script/username.js"></script>
+<script src="script/form.js"></script>
+
 
 <script>
     window.onload = function(){
         getUserName();
+        getForm();
     }
 </script>
 
@@ -129,11 +132,11 @@
             <option value="นางสาว"> นางสาว </option>
         </select>
         <br>
-        <label class="col-sm-2" for=name><span class="red-asterisk">*</span>ชื่อ-นามสกุล</label>
-        <input name="name" id="name" required>
+        <label class="col-sm-2" for=displayNameTH><span class="red-asterisk">*</span>ชื่อ-นามสกุล</label>
+        <input name="displayNameTH" id="displayNameTH" readonly required>
         <br>
-        <label class="col-sm-2" for=studentId><span class="red-asterisk">*</span>เลขทะเบียนนักศึกษา</label>
-        <input name="studentId" id="studentId" required maxlength="10" placeholder="กรอกตัวเลข 10 หลัก">
+        <label class="col-sm-2" for=username1><span class="red-asterisk">*</span>เลขทะเบียนนักศึกษา</label>
+        <input name="username1" id="username1" readonly required>
         <br>
         <label class="col-sm-2" for=studentYear><span class="red-asterisk">*</span>ชั้นปีที่ศึกษา</label>
         <select name="studentYear" id="studentYear" required class="small-box">
