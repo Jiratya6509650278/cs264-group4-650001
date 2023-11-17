@@ -20,7 +20,7 @@ public class JdbcTutorialRepository implements TutorialRepository {
 
     @Override
     public int save(Tutorial tu){
-        return jdbcTemplate.update("INSERT INTO dropadd( date, prefix, name, studentId, studentYear, studyField, advisor, addressNumber, moo, tumbol, amphur, province, " +
+        return jdbcTemplate.update("INSERT INTO TestCS264Groupv2( date, prefix, name, studentId, studentYear, studyField, advisor, addressNumber, moo, tumbol, amphur, province, " +
                 "postalCode, mobilePhone, phone, nadd, ndrop, subjectCode, subjectName, subjectSection, subjectDate, subjectCredit, subjectTeacher, cause)" +
                 "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
                 new Object[]{tu.getDate(), tu.getPrefix(), tu.getName(), tu.getStudentId(), tu.getStudentYear(), tu.getStudyField(), tu.getAdvisor(), tu.getAddressnumber(),
@@ -30,7 +30,7 @@ public class JdbcTutorialRepository implements TutorialRepository {
     }
 
     public int save1(Tutorial tu){
-        return jdbcTemplate.update("INSERT INTO quit1(date,prefix,name,studentId,studentYear,studyField,advisor,addressNumber,moo,tumbol,amphur,province,postalCode,mobilePhone," +
+        return jdbcTemplate.update("INSERT INTO คำร้องขอลาออก(date,prefix,name,studentId,studentYear,studyField,advisor,addressNumber,moo,tumbol,amphur,province,postalCode,mobilePhone," +
                 "phone,term,year,reason,faculty,branch,university,faculty2,branch2,deptCause,grade,cause)" +
                 "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
                 new Object[]{tu.getDate(), tu.getPrefix(), tu.getName(), tu.getStudentId(), tu.getStudentYear(), tu.getStudyField(), tu.getAdvisor(), tu.getAddressnumber(), tu.getMoo(),
@@ -39,7 +39,7 @@ public class JdbcTutorialRepository implements TutorialRepository {
     }
 
     public int save2(Tutorial tu){
-        return jdbcTemplate.update("INSERT INTO tuition(date,prefix,name,studentId,studentYear,studyField,advisor,addressNumber,moo,tumbol,amphur,province,postalCode,mobilePhone," +
+        return jdbcTemplate.update("INSERT INTO ผ่อนผัน(date,prefix,name,studentId,studentYear,studyField,advisor,addressNumber,moo,tumbol,amphur,province,postalCode,mobilePhone," +
                 "phone,term,year,cause)" +
                 "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
                 new Object[]{tu.getDate(), tu.getPrefix(), tu.getName(), tu.getStudentId(), tu.getStudentYear(), tu.getStudyField(), tu.getAdvisor(), tu.getAddressnumber(), tu.getMoo(),
@@ -47,7 +47,7 @@ public class JdbcTutorialRepository implements TutorialRepository {
     }
 
     public int save3(Tutorial tu){
-        return jdbcTemplate.update("INSERT INTO other(date,prefix,name,studentId,studentYear,studyField,advisor,addressNumber,moo,tumbol,amphur,province,postalCode,mobilePhone," +
+        return jdbcTemplate.update("INSERT INTO ตารางอื่นๆ(date,prefix,name,studentId,studentYear,studyField,advisor,addressNumber,moo,tumbol,amphur,province,postalCode,mobilePhone," +
                 "phone,otherCause,cause)" +
                 "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
                 new Object[]{tu.getDate(), tu.getPrefix(), tu.getName(), tu.getStudentId(), tu.getStudentYear(), tu.getStudyField(), tu.getAdvisor(), tu.getAddressnumber(), tu.getMoo(),

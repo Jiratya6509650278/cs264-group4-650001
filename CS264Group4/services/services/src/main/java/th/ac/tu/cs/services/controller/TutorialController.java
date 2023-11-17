@@ -22,8 +22,8 @@ public class TutorialController {
     @GetMapping("/hello")
     public String dropadd(@RequestParam(value= "date") String a,
                             @RequestParam(value= "prefix") String b,
-                            @RequestParam(value= "name") String c,
-                            @RequestParam(value= "studentId") String d,
+                            @RequestParam(value= "displayNameTH") String c,
+                            @RequestParam(value= "username1") String d,
                             @RequestParam(value= "studentYear") String e,
                             @RequestParam(value= "studyField") String f,
                             @RequestParam(value= "advisor") String g,
@@ -55,8 +55,8 @@ public class TutorialController {
     @GetMapping("/hello2")
     public String quit(@RequestParam(value = "date")String a,
                        @RequestParam(value = "prefix")String b,
-                       @RequestParam(value = "name")String c,
-                       @RequestParam(value = "studentId")String d,
+                       @RequestParam(value = "displayNameTH")String c,
+                       @RequestParam(value = "username1")String d,
                        @RequestParam(value = "studentYear")String e,
                        @RequestParam(value = "studyField")String f,
                        @RequestParam(value = "advisor")String g,
@@ -89,8 +89,8 @@ public class TutorialController {
     @GetMapping("/hello3")
     public String tuition(@RequestParam(value = "date")String a,
                           @RequestParam(value = "prefix")String b,
-                          @RequestParam(value = "name")String c,
-                          @RequestParam(value = "studentId")String d,
+                          @RequestParam(value = "displayNameTH")String c,
+                          @RequestParam(value = "username1")String d,
                           @RequestParam(value = "studentYear")String e,
                           @RequestParam(value = "studyField")String f,
                           @RequestParam(value = "advisor")String g,
@@ -115,8 +115,8 @@ public class TutorialController {
     @GetMapping("/hello4")
     public String other(@RequestParam(value = "date")String a,
                         @RequestParam(value = "prefix")String b,
-                        @RequestParam(value = "name")String c,
-                        @RequestParam(value = "studentId")String d,
+                        @RequestParam(value = "displayNameTH")String c,
+                        @RequestParam(value = "username1")String d,
                         @RequestParam(value = "studentYear")String e,
                         @RequestParam(value = "studyField")String f,
                         @RequestParam(value = "advisor")String g,
