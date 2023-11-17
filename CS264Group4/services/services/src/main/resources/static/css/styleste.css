@@ -111,6 +111,12 @@ img{
     border-radius: 25px;
     box-shadow: 7px 7px rgba(255, 255, 255, 0.5);
 }
+#center-web-2{
+    margin-top: 5%;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 7px 7px rgba(255, 255, 255, 0.5);
+}
 .cbtn{
     margin-left: 37%;
     margin-top: 30px;
